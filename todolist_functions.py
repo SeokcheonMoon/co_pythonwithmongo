@@ -29,11 +29,11 @@ def Todos(user_id, collection1, collection2):
     print("ToDo List 중 하나 선택 하세요 !")
 
     # todos_list 컬렉션의 내용 중 'title'만 print
-    result_todo = user_id.find({})           # 2 hint :  result_todo = user_id.find({})                      ?
+    result_todo = collection1.find({})           # 2 hint :  result_todo = user_id.find({})                      ?
     count = 1
     for i in result_todo:
-        print("{}. {} {}".format(count, result_todo["title"][i]), end=" ")           # 3 hint  :   print("{}. {} {}".format(count, i["title"]), end=" ")
-        count+= 3           # 4 hint  :   count =+ 3
+        print("{}. {} {}".format(count, i["title"]), end=" ")           # 3 hint  :   print("{}. {} {}".format(count, i["title"]), end=" ")
+        count+= 1           # 4 hint  :   count =+ 3
     print("")
 
     # todo중 하나 입력
