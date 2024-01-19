@@ -32,7 +32,7 @@ def Todos(user_id, collection1, collection2):
     result_todo = collection1.find({})           # 2 hint :  result_todo = user_id.find({})                      ?
     count = 1
     for i in result_todo:
-        print("{}. {} {}".format(count, i["title"]), end=" ")           # 3 hint  :   print("{}. {} {}".format(count, i["title"]), end=" ")
+        print("{}.{}".format(count, i["title"]), end=" ")           # 3 hint  :   print("{}. {} {}".format(count, i["title"]), end=" ")
         count+= 1           # 4 hint  :   count =+ 3
     print("")
 
